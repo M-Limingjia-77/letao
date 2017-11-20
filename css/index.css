@@ -1,0 +1,292 @@
+html,body {
+	background-color: #fff;
+}
+.lt {
+  width: 100%;
+  /* margin: 0 auto; */
+}
+
+/* 在移动端会有一些元素出现手指触摸之后出现背景颜色 去除掉 */
+/* 在ios系统中 所有input都会自带一个内阴影  你通过很多方法都去除不掉 */
+/* -webkit-appearance: none; 可以去除掉内阴影 */
+/*   */
+* {
+  -webkit-tap-highlight-color: transparent;
+  
+}
+
+.lt_search {
+	width: 100%;
+	height: 44px;
+	background-color: #006699;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.lt_search h2 {
+	color: #fff;
+	/* height: 44px; */
+	line-height: 44px;
+	font-size: 16px;
+	text-align: center;
+	/* 不加粗 */
+	font-weight: normal;
+
+}
+/* 搜索*/
+.lt_search a i {
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 41px;
+	height: 41px;
+	color: #fff;
+	background-position: -119px -128px;
+	
+	background-image: url("../images/jd-sprites.png");
+	background-size:  41px, 41px;
+}
+
+/* 内容区域 */
+
+/* 1.轮播图 */
+.carousel {
+  width: 100%;
+
+}
+.carousel img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+/* 2. 运动鞋 */
+.shoes {
+	width: 100%;
+}
+.shoes ul {
+	padding: 10px;
+	box-sizing: border-box;
+}
+.shoes ul li {
+	float: left;
+	width: 33.3333%;
+}
+.shoes ul li img {
+	width: 100%;
+	vertical-align: middle;
+}
+
+/* sale */
+.sale {
+	width: 100%;
+	overflow: hidden;
+	
+}
+.sale .sale_l {
+	width: 66%;
+	float: left;
+}
+.sale_l ul {
+	padding-left:10px;
+	/* box-sizing: border-box; */
+}
+.sale_l ul li {
+	float: left;
+	width: 50%;
+}
+.sale_l ul li img {
+	width: 100%;
+	vertical-align: middle;
+}
+
+.sale .sale_r {
+	width: 34%;
+}
+.sale_r {
+	padding-right: 10px;
+	box-sizing: border-box;
+	float: right;
+}
+.sale_r img {
+	width: 100%;
+	vertical-align: middle;
+}
+
+/* sport */
+.sport {
+	width: 100%;
+	/* height: 255px; */
+}
+/* 4. 品牌专区 */
+.brand {
+	margin-top: 10px;
+}
+.brand img {
+	width: 100%;
+	padding:0 10px;
+	box-sizing: border-box;
+}
+
+
+/* 5.nike */
+.nike {
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.nike ul {
+	padding: 0 10px;
+	width: 100%;
+	overflow: hidden;
+}
+.nike ul li {
+	float: left;
+	width: 25%;
+}
+.nike ul li img {
+	width: 100%;
+	/* 与旁边的图片基线对齐 */
+	vertical-align: middle;
+}
+/* .nike ul {
+	width: 100%;
+	height: 96px;
+}
+.nike ul li {
+	width: 75px;
+	height: 48px;	
+	float: left;
+}
+.nike ul li img {
+	width: 100%;
+	height: 100%;
+} */
+
+/* 5. 运动生活专区 */
+.life {
+	margin-top: 10px;
+	/* height: 100%; */
+	width: 100%;
+}
+.life a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.life img {
+	width: 100%;
+	height: 100%;
+	padding:0 10px;
+	box-sizing: border-box;
+}
+
+/* adidas */
+.adidas {
+	/* margin-top: 15px; */
+	width: 100%;
+}
+
+.adidas ul {
+	width: 100%;
+	padding: 0px 10px;
+	padding-bottom: 50px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.adidas li {
+	width: 48%;
+	float: left;
+	margin-bottom: 10px;
+	border: 1px solid pink;
+	/* 水平 垂直 模糊度 颜色 */
+	box-shadow: 1px 1px 2px #ccc;
+}
+.adidas ul li img {
+	width: 100%;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.adidas ul li h6 {
+	font-size: 15px;
+	color: #8f8f94;
+	margin: 0px 5px 20px 5px;
+}
+.adidas ul li span {
+	font-size: 14px;
+	color: red;
+	display: line-block;
+	margin: 20px 13px;
+}
+.adidas ul li del {
+	color: #ccc;
+	text-decoration: line-through;
+}
+
+.adidas .buy {
+	width: 80px;
+	height: 32px;
+	line-height: 32px;
+	border: 1px solid #ccc;
+	background-color: #006699;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.adidas .buy a {
+	color: #fff;
+}
+
+/* 底部工具栏 */
+.lt_toolbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 44px;
+  border-top: 1px solid #f7f7f7;
+  background-color: #006699;
+  box-sizing: border-box;
+  z-index: 10;
+}
+.lt_toolbar ul {
+	width: 100%;
+	height: 100%;
+	display: flex;
+
+}
+.lt_toolbar ul li {
+	/* float: left; */
+	flex: 1;
+	height: 100%;
+	/* margin-bottom: 50px; */
+}
+.lt_toolbar a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.lt_toolbar img {
+  width: auto;
+  height: 44px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
